@@ -37,7 +37,6 @@ $gris-oscuro: #3d3f40;
     background-color: $gris-oscuro;
     color: antiquewhite;
     text-align: center;
-
     padding: 3rem;
 }
 
@@ -58,12 +57,12 @@ $gris-oscuro: #3d3f40;
 }
 
 .button-text {
-    font-size: 15px;
+    font-size: 13px;
     text-decoration: none;
     padding: 8px;
     border-color: none;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 20%;
+    margin-right: 20%;
 
 }
 
@@ -86,21 +85,23 @@ $gris-oscuro: #3d3f40;
 
 .clientes-grid {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     padding-bottom: 4rem;
     padding: 1rem;
     vertical-align: center;
     margin-bottom: 4rem;
 }
 
+
 .clientes-grid img {
     width: 15vw;
     margin-bottom: 0.5rem;
-
+    align-content: center;
+    margin-left: 25%;
+    margin-right: 25%;
 }
 
 @media (min-width: 768px) {
-
     h2 {
         font-size: xx-large;
     }
@@ -158,11 +159,12 @@ $gris-oscuro: #3d3f40;
     .clientes-grid {
         padding-left: 15vh;
         padding-right: 15vh;
-    }
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+    }    
 
     .clientes-grid img {
         width: 8vw;
         margin-bottom: 1.5rem;
-        align-content: center;
     }
 }
