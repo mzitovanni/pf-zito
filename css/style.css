@@ -122,7 +122,7 @@
   text-align: center;
   padding: 2rem;
   padding-top: 3rem;
-  padding-bottom: 3rem; }
+  padding-bottom: 2rem; }
 
 .texo-descripcion p {
   margin-top: 1rem;
@@ -202,7 +202,7 @@
     font-size: xx-large; }
   .texo-descripcion {
     padding-top: 8rem;
-    padding-bottom: 8rem;
+    padding-bottom: 6rem;
     padding: 6rem; }
   .texo-descripcion p {
     margin-top: 1rem;
@@ -290,13 +290,11 @@
 .equipo-flex {
   display: flex;
   flex-direction: row;
-  margin: 2rem;
-  padding-left: 20vh;
-  padding-right: 20vh; }
+  margin: 1rem; }
 
 .equipo img {
   width: 200px;
-  margin: 1.5rem; }
+  margin: 1rem; }
 
 .equipo-flex ul {
   display: flex;
@@ -316,6 +314,20 @@
   grid-template-columns: repeat(2, 1fr);
   padding-bottom: 1rem;
   vertical-align: center; }
+
+@media (max-width: 850px) {
+  .equipo-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-left: 3vh;
+    padding-right: 3vh; } }
+
+@media (min-width: 851px) {
+  .equipo-flex {
+    padding-left: 20vh;
+    padding-right: 20vh; } }
 
 .noticia-flex {
   display: flex;

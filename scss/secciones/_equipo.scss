@@ -3,14 +3,12 @@
 .equipo-flex {
     display: flex;
     flex-direction: row;
-    margin: 2rem;
-    padding-left: 20vh;
-    padding-right: 20vh;    
+    margin: 1rem;  
 }
 
 .equipo img{
     width: 200px;
-    margin: 1.5rem;
+    margin: 1rem;
 }
 
 .equipo-flex ul {  
@@ -18,7 +16,6 @@
     flex-direction: column;
     list-style: none;
     margin-top: 1rem;
-
 }
 
 .equipo-flex li {
@@ -37,3 +34,23 @@
     padding-bottom: 1rem;
     vertical-align: center;
 }
+
+@media (max-width: 850px) {
+
+    .equipo-flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-left: 3vh;
+        padding-right: 3vh; 
+
+    }}
+
+@media (min-width: 851px) {
+
+    .equipo-flex {
+        padding-left: 20vh;
+        padding-right: 20vh;    
+    }      
+        }
