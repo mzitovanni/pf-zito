@@ -4,9 +4,10 @@
     height: 30vh;
     background-size: cover;
     box-shadow: 0px 4px 20px gray;
+    @extend .banner-hero-extend
 }
 
-.banner-hero {
+.banner-hero-extend {
     text-align: left;
     color: antiquewhite;
     padding: 2rem;
@@ -20,15 +21,7 @@
     height: 30vh;
     background-size: cover;
     box-shadow: 0px 4px 20px gray;
-}
-
-.banner-hero-servicios {
-    text-align: left;
-    color: antiquewhite;
-    padding: 2rem;
-    padding-right: 30vw;
-    position: relative;
-    top: 50%;
+    @extend .banner-hero-extend
 }
 
 .banner-hero-quienesomos {
@@ -36,15 +29,7 @@
     height: 30vh;
     background-size: cover;
     box-shadow: 0px 4px 20px gray;
-}
-
-.banner-hero-quienesomos {
-    text-align: left;
-    color: antiquewhite;
-    padding: 2rem;
-    padding-right: 30vw;
-    position: relative;
-    top: 50%;
+    @extend .banner-hero-extend
 }
 
 .banner-hero-contacto {
@@ -52,66 +37,48 @@
     height: 30vh;
     background-size: cover;
     box-shadow: 0px 4px 20px gray;
+    @extend .banner-hero-extend
 }
 
-.banner-hero-contacto {
-    text-align: left;
-    color: antiquewhite;
-    padding: 2rem;
-    padding-right: 30vw;
-    position: relative;
-    top: 50%;
+.banner-hero-noticia {
+    background-image: url('../recursos/img-banners/ZMB_banner-noticias.png');
+    height: 30vh;
+    background-size: cover;
+    box-shadow: 0px 4px 20px gray;
+    @extend .banner-hero-extend
 }
+
+
 
 
 @media (min-width: 768px) {
-.banner-hero {
+
+
+    .banner-hero-768px {
         height: 70vh;
-    }
-    
-    .banner-hero {
         padding: 20vh;
         padding-right: 30%;
         font-size:180%;
     }
 
-    .banner-hero-servicios {
-        height: 70vh;        
+    .banner-hero {
+        @extend .banner-hero-768px
     }
 
     .banner-hero-servicios {
-        padding: 20vh;
-        padding-right: 40%;
-        font-size:180%;    
+        @extend .banner-hero-768px
     }
 
     .banner-hero-quienesomos {
-        height: 70vh;
-        padding: 20vh;
-        padding-right: 40%;
-        font-size:180%;            
+        @extend .banner-hero-768px
     }
 
     .banner-hero-contacto {
-        height: 70vh;
-        padding: 20vh;
-        padding-right: 40%;
-        font-size:180%;           
+        @extend .banner-hero-768px
     } 
     
     .banner-hero-noticia {
-        background-image: url('../recursos/img-banners/ZMB_banner-noticias.png');
-        height: 30vh;
-        background-size: cover;
-        box-shadow: 0px 4px 20px gray;
+        @extend .banner-hero-768px
     }
-    
-    .banner-hero-noticia {
-        text-align: left;
-        color: antiquewhite;
-        padding: 2rem;
-        padding-right: 30vw;
-        position: relative;
-        top: 50%;
-    }
+
 }
