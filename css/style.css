@@ -136,7 +136,11 @@
 .servicio img {
   width: 40vw;
   margin-bottom: 0.5rem;
-  filter: grayscale(40%); }
+  filter: grayscale(40%);
+  border-radius: 3%;
+  border-color: antiquewhite;
+  border-width: 1px;
+  border-style: solid; }
 
 .servicio p {
   font-size: 13px;
@@ -164,12 +168,15 @@
   padding-top: 2rem; }
 
 .button-text {
-  font-size: 13px;
+  font-size: 1rem;
   text-decoration: none;
-  padding: 8px;
-  border-color: none;
+  padding: 1rem;
+  color: antiquewhite;
+  border-color: antiquewhite;
   margin-left: 20%;
-  margin-right: 20%; }
+  margin-right: 20%;
+  background-color: transparent;
+  border-radius: 3%; }
 
 .button-servicio {
   margin: 0.5rem;
