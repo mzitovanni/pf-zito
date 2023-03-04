@@ -132,6 +132,13 @@ $gris-oscuro: #3d3f40;
 }
 
 @media (min-width: 768px) {
+    .texo-descripcion h2{
+        font-size: xx-large;
+    }
+    .subtitulo-color h2{
+        font-size: xx-large;
+    }
+
     h2 {
         font-size: xx-large;
     }
@@ -146,7 +153,7 @@ $gris-oscuro: #3d3f40;
         margin-top: 1rem;
         padding-left: 15vh;
         padding-right: 15vh;
-        font-size: 16px;
+        font-size: large;
     }
 
     .servicio {
@@ -159,7 +166,7 @@ $gris-oscuro: #3d3f40;
     }
 
     .servicio p {
-        font-size: 16px;
+        font-size: large;
         margin-bottom: 1rem;
     }
 
@@ -182,6 +189,12 @@ $gris-oscuro: #3d3f40;
 
     .subtitulo-color {
         padding-top: 6rem;
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+
+    .subtitulo-color p {
+        font-size: large;
         padding-left: 6rem;
         padding-right: 6rem;
     }

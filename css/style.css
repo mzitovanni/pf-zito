@@ -230,6 +230,10 @@
   margin-right: 25%; }
 
 @media (min-width: 768px) {
+  .texo-descripcion h2 {
+    font-size: xx-large; }
+  .subtitulo-color h2 {
+    font-size: xx-large; }
   h2 {
     font-size: xx-large; }
   .texo-descripcion {
@@ -240,14 +244,14 @@
     margin-top: 1rem;
     padding-left: 15vh;
     padding-right: 15vh;
-    font-size: 16px; }
+    font-size: large; }
   .servicio {
     width: 20vw; }
   .servicio img {
     width: 15vw;
     margin-bottom: 2rem; }
   .servicio p {
-    font-size: 16px;
+    font-size: large;
     margin-bottom: 1rem; }
   .servicios-grid {
     grid-template-columns: repeat(4, 1fr);
@@ -262,6 +266,10 @@
     padding-bottom: 3rem; }
   .subtitulo-color {
     padding-top: 6rem;
+    padding-left: 6rem;
+    padding-right: 6rem; }
+  .subtitulo-color p {
+    font-size: large;
     padding-left: 6rem;
     padding-right: 6rem; }
   .clientes-grid {
