@@ -10,7 +10,7 @@
 /* BANNER INICIAL*/
 .banner-hero {
   background-image: url("../recursos/img-banners/ZMB_banner-home.png");
-  height: 30vh;
+  height: 40vh;
   background-size: cover;
   box-shadow: 0px 4px 20px gray; }
 
@@ -18,31 +18,31 @@
   text-align: left;
   color: antiquewhite;
   padding: 2rem;
-  padding-right: 20vw;
+  padding-right: 15vw;
   position: relative;
   top: 50%; }
 
 .banner-hero-servicios {
   background-image: url("../recursos/img-banners/ZMB_banner-servicios.png");
-  height: 30vh;
+  height: 40vh;
   background-size: cover;
   box-shadow: 0px 4px 20px gray; }
 
 .banner-hero-quienesomos {
   background-image: url("../recursos/img-banners/ZMB_banner-quienes-somos.png");
-  height: 30vh;
+  height: 40vh;
   background-size: cover;
   box-shadow: 0px 4px 20px gray; }
 
 .banner-hero-contacto {
   background-image: url("../recursos/img-banners/ZMB_banner-contacto.png");
-  height: 30vh;
+  height: 40vh;
   background-size: cover;
   box-shadow: 0px 4px 20px gray; }
 
 .banner-hero-noticia {
   background-image: url("../recursos/img-banners/ZMB_banner-noticias.png");
-  height: 30vh;
+  height: 40vh;
   background-size: cover;
   box-shadow: 0px 4px 20px gray; }
 
@@ -95,12 +95,13 @@
 
 .header-flex ul {
   display: flex;
-  list-style: none; }
+  list-style: none;
+  align-items: center;
+  padding-left: 0rem; }
 
 .header-flex li {
   margin: 0.5rem;
-  font-size: 13px;
-  margin-bottom: 1rem; }
+  font-size: 12px; }
 
 .header-flex a {
   color: antiquewhite;
@@ -115,7 +116,9 @@
     justify-content: space-around; }
   .header-flex li {
     margin: 1rem;
-    font-size: 16px; } }
+    font-size: 18px; }
+  .header-flex ul {
+    margin-bottom: 0rem; } }
 
 /* DESCRIPCIÓN */
 .texo-descripcion {
@@ -124,8 +127,11 @@
   padding-top: 3rem;
   padding-bottom: 2rem; }
 
+.texo-descripcion h2 {
+  font-size: 22px; }
+
 .texo-descripcion p {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   font-size: 13px; }
 
 /* SERVICIOS */
@@ -142,6 +148,9 @@
   border-width: 1px;
   border-style: solid; }
 
+.servicio h2 {
+  font-size: 22px; }
+
 .servicio p {
   font-size: 13px;
   margin-bottom: 2rem;
@@ -153,6 +162,12 @@
   text-align: center;
   padding: 3rem; }
 
+.subtitulo-color h2 {
+  font-size: 22px; }
+
+.subtitulo-color p {
+  font-size: 13px; }
+
 /* GRILLA DE SERVICIOS - HOME */
 .servicios-grid {
   display: grid;
@@ -160,7 +175,8 @@
   background-color: #3d3f40;
   color: antiquewhite;
   padding-bottom: 1rem;
-  vertical-align: center; }
+  vertical-align: center;
+  border-color: #3d3f40; }
 
 .button {
   background-color: #3d3f40;
@@ -179,10 +195,16 @@
   border-radius: 3%; }
 
 .button-servicio {
-  margin: 0.5rem;
-  margin-bottom: 3rem;
-  text-transform: uppercase;
-  padding: 0.5rem; }
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 0.5rem;
+  color: antiquewhite;
+  border-color: antiquewhite;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 2rem;
+  background-color: transparent;
+  border-radius: 3%; }
 
 /* CLIENTES */
 .subtitulo {
@@ -332,17 +354,18 @@
 .equipo-flex {
   display: flex;
   flex-direction: row;
-  margin: 1rem; }
+  margin: 0.5rem; }
 
 .equipo img {
   width: 200px;
-  margin: 1rem; }
+  margin: 0.5rem;
+  margin-top: 1.5rem; }
 
 .equipo-flex ul {
   display: flex;
   flex-direction: column;
   list-style: none;
-  margin-top: 1rem; }
+  margin-top: 0.5rem; }
 
 .equipo-flex li {
   margin: 0.5rem; }

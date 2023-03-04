@@ -10,8 +10,12 @@ $gris-oscuro: #3d3f40;
     padding-bottom: 2rem;
 }
 
+.texo-descripcion h2{
+    font-size: 22px;
+}
+
 .texo-descripcion p {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     font-size: 13px;
 }
 
@@ -31,6 +35,11 @@ $gris-oscuro: #3d3f40;
     border-style: solid
 }
 
+.servicio h2{
+    font-size: 22px;
+
+}
+
 .servicio p {
     font-size: 13px;
     margin-bottom: 2rem;
@@ -44,6 +53,14 @@ $gris-oscuro: #3d3f40;
     padding: 3rem;
 }
 
+.subtitulo-color h2{
+    font-size: 22px;
+}
+
+.subtitulo-color p {
+    font-size: 13px;
+}
+
 /* GRILLA DE SERVICIOS - HOME */
 .servicios-grid {
     display: grid;
@@ -52,6 +69,7 @@ $gris-oscuro: #3d3f40;
     color: antiquewhite;
     padding-bottom: 1rem;
     vertical-align: center;
+    border-color: $gris-oscuro;
 }
 
 .button {
@@ -73,10 +91,16 @@ $gris-oscuro: #3d3f40;
 }
 
 .button-servicio {
-    margin: 0.5rem;
-    margin-bottom: 3rem;
-    text-transform: uppercase;
+    font-size: 1rem;
+    text-decoration: none;
     padding: 0.5rem;
+    color:antiquewhite;
+    border-color: antiquewhite;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 2rem;
+    background-color: transparent;
+    border-radius: 3%;
 }
 
 /* CLIENTES */
