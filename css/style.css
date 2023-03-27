@@ -1,26 +1,206 @@
 @charset "UTF-8";
+/* DESCRIPCIÓN */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap");
+.texo-descripcion {
+  text-align: center;
+  padding: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  color: #023047; }
+
+.texo-descripcion h2 {
+  font-size: xx-large;
+  font-family: 'Shippori Mincho B1', serif;
+  color: #023047; }
+
+.texo-descripcion p {
+  font-size: 13px;
+  margin-bottom: 2rem;
+  margin: 0.5rem;
+  color: #023047;
+  font-family: Generalsans, sans-serif; }
+
+/* SERVICIOS */
+.servicio {
+  width: 50vw;
+  text-align: center; }
+
+.servicio img {
+  width: 40vw;
+  margin-bottom: 0.5rem;
+  filter: grayscale(40%);
+  border-radius: 3%;
+  border-color: antiquewhite;
+  border-width: 1px;
+  border-style: solid; }
+
+.servicio h2 {
+  font-size: xx-large;
+  font-family: 'Shippori Mincho B1', serif; }
+
+.servicio p {
+  font-size: 13px;
+  margin-bottom: 2rem;
+  margin: 0.5rem; }
+
+.subtitulo-color {
+  background-color: #f1efe1;
+  color: #023047;
+  text-align: center;
+  padding: 3rem; }
+
+.subtitulo-color h2 {
+  font-size: xx-large;
+  font-family: 'Shippori Mincho B1', serif;
+  color: #023047; }
+
+.subtitulo-color p {
+  font-size: 13px;
+  color: #023047; }
+
+/* GRILLA DE SERVICIOS - HOME */
+.servicios-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #f1efe1;
+  border-color: #f1efe1;
+  color: #023047; }
+
+.button {
+  background-color: #f1efe1;
+  padding-bottom: 6rem;
+  padding-top: 2rem; }
+
+.button-text {
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 1rem;
+  color: antiquewhite;
+  border-color: antiquewhite;
+  margin-left: 20%;
+  margin-right: 20%;
+  background-color: transparent;
+  border-radius: 3%; }
+
+.button-servicio {
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 0.5rem;
+  color: antiquewhite;
+  border-color: antiquewhite;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 2rem;
+  background-color: transparent;
+  border-radius: 3%; }
+
+/* CLIENTES */
+.subtitulo {
+  text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem; }
+
+.clientes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-bottom: 4rem;
+  padding: 1rem;
+  vertical-align: center;
+  margin-bottom: 4rem; }
+
+.clientes-grid img {
+  width: 15vw;
+  margin-bottom: 0.5rem;
+  align-content: center;
+  margin-left: 25%;
+  margin-right: 25%; }
+
+@media (min-width: 768px) {
+  .texo-descripcion h2 {
+    font-size: xx-large; }
+  .subtitulo-color h2 {
+    font-size: xx-large; }
+  h2 {
+    font-size: xx-large; }
+  .texo-descripcion {
+    padding-top: 8rem;
+    padding-bottom: 6rem;
+    padding-left: 20vh;
+    padding-right: 20vh; }
+  .texo-descripcion p {
+    margin-top: 1rem;
+    padding-left: 15vh;
+    padding-right: 15vh;
+    font-size: large; }
+  .servicio {
+    width: 20vw; }
+  .servicio img {
+    width: 15vw;
+    margin-bottom: 2rem; }
+  .servicio p {
+    font-size: large;
+    margin-bottom: 0rem; }
+  .servicios-grid {
+    grid-template-columns: repeat(4, 1fr);
+    padding-bottom: 0rem;
+    padding-left: 15vh;
+    padding-right: 15vh; }
+  .button-text {
+    margin-left: 40%;
+    margin-right: 40%; }
+  .subtitulo {
+    padding-top: 8rem;
+    padding-bottom: 2rem; }
+  .subtitulo-color {
+    padding-top: 4rem;
+    padding-left: 20vh;
+    padding-right: 20vh; }
+  .subtitulo-color p {
+    font-size: large;
+    padding-left: 6rem;
+    padding-right: 6rem; }
+  .clientes-grid {
+    padding-left: 15vh;
+    padding-right: 15vh;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); }
+  .clientes-grid img {
+    width: 8vw;
+    margin-bottom: 1.5rem; } }
+
 /*font-family: 'Montserrat', sans-serif;*/
+/*font-family: 'Shippori Mincho B1', serif;*/
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: Generalsans, sans-serif;
   box-sizing: border-box; }
 
 /* BANNER INICIAL*/
+.banner-hero-extend, .banner-hero, .banner-hero-servicios, .banner-hero-contacto {
+  text-align: center;
+  color: antiquewhite;
+  padding: 3rem;
+  padding-left: 10%;
+  padding-right: 10%;
+  position: relative; }
+
 .banner-hero {
   background-image: url("../recursos/img-banners/ZMB_banner-home.png");
   height: 40vh;
   background-size: cover;
   box-shadow: 0px 4px 20px gray; }
 
-.banner-hero-extend, .banner-hero, .banner-hero-servicios, .banner-hero-quienesomos, .banner-hero-contacto, .banner-hero-noticia {
-  text-align: left;
-  color: antiquewhite;
-  padding: 2rem;
-  padding-right: 15vw;
-  position: relative;
-  top: 50%; }
+.banner-hero h1 {
+  font-family: 'Shippori Mincho B1', serif;
+  color: #fff;
+  font-size: xx-large;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: -2px; }
 
 .banner-hero-servicios {
   background-image: url("../recursos/img-banners/ZMB_banner-servicios.png");
@@ -28,11 +208,13 @@
   background-size: cover;
   box-shadow: 0px 4px 20px gray; }
 
-.banner-hero-quienesomos {
-  background-image: url("../recursos/img-banners/ZMB_banner-quienes-somos.png");
-  height: 40vh;
-  background-size: cover;
-  box-shadow: 0px 4px 20px gray; }
+.banner-hero-servicios h1 {
+  font-family: 'Shippori Mincho B1', serif;
+  color: #fff;
+  font-size: xx-large;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: -2px; }
 
 .banner-hero-contacto {
   background-image: url("../recursos/img-banners/ZMB_banner-contacto.png");
@@ -40,18 +222,48 @@
   background-size: cover;
   box-shadow: 0px 4px 20px gray; }
 
-.banner-hero-noticia {
-  background-image: url("../recursos/img-banners/ZMB_banner-noticias.png");
-  height: 40vh;
-  background-size: cover;
-  box-shadow: 0px 4px 20px gray; }
+.banner-hero-contacto h1 {
+  font-family: 'Shippori Mincho B1', serif;
+  color: #fff;
+  font-size: xx-large;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: -2px; }
+
+.banner-hero-contacto h3 {
+  text-align: center;
+  font-size: large;
+  padding: 1rem; }
 
 @media (min-width: 768px) {
-  .banner-hero-768px, .banner-hero, .banner-hero-servicios, .banner-hero-quienesomos, .banner-hero-contacto, .banner-hero-noticia {
-    height: 70vh;
-    padding: 20vh;
-    padding-right: 30%;
-    font-size: 180%; } }
+  .banner-hero-768px, .banner-hero, .banner-hero-servicios {
+    height: 80vh;
+    padding: 15vh;
+    padding-right: 15%;
+    padding-left: 15%;
+    font-size: 180%; }
+  .banner-hero-contacto {
+    height: 50vh;
+    padding: 10vh;
+    padding-right: 15%;
+    padding-left: 15%;
+    font-size: 180%; }
+  .banner-hero h1 {
+    font-size: 75px;
+    line-height: 80px;
+    font-weight: 300; }
+  .banner-hero-servicios h1 {
+    font-size: 70px;
+    line-height: 80px;
+    font-weight: 300; }
+  .banner-hero-contacto h1 {
+    font-size: 70px;
+    line-height: 80px;
+    font-weight: 300; }
+  .banner-hero-contacto h3 {
+    text-align: center;
+    font-size: xx-large;
+    padding: 3rem; } }
 
 /* FOOTER */
 .footer {
@@ -120,254 +332,55 @@
   .header-flex ul {
     margin-bottom: 0rem; } }
 
-/* DESCRIPCIÓN */
-.texo-descripcion {
-  text-align: center;
-  padding: 2rem;
-  padding-top: 3rem;
-  padding-bottom: 2rem; }
-
-.texo-descripcion h2 {
-  font-size: 22px; }
-
-.texo-descripcion p {
-  margin-top: 0.5rem;
-  font-size: 13px; }
-
-/* SERVICIOS */
-.servicio {
-  width: 50vw;
-  text-align: center; }
-
-.servicio img {
-  width: 40vw;
-  margin-bottom: 0.5rem;
-  filter: grayscale(40%);
-  border-radius: 3%;
-  border-color: antiquewhite;
-  border-width: 1px;
-  border-style: solid; }
-
-.servicio h2 {
-  font-size: 22px; }
-
-.servicio p {
-  font-size: 13px;
-  margin-bottom: 2rem;
-  margin: 0.5rem; }
-
-.subtitulo-color {
-  background-color: #3d3f40;
-  color: antiquewhite;
-  text-align: center;
-  padding: 3rem; }
-
-.subtitulo-color h2 {
-  font-size: 22px; }
-
-.subtitulo-color p {
-  font-size: 13px; }
-
-/* GRILLA DE SERVICIOS - HOME */
-.servicios-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  background-color: #3d3f40;
-  color: antiquewhite;
-  padding-bottom: 1rem;
-  vertical-align: center;
-  border-color: #3d3f40; }
-
-.button {
-  background-color: #3d3f40;
-  padding-bottom: 6rem;
-  padding-top: 2rem; }
-
-.button-text {
-  font-size: 1rem;
-  text-decoration: none;
-  padding: 1rem;
-  color: antiquewhite;
-  border-color: antiquewhite;
-  margin-left: 20%;
-  margin-right: 20%;
-  background-color: transparent;
-  border-radius: 3%; }
-
-.button-servicio {
-  font-size: 1rem;
-  text-decoration: none;
-  padding: 0.5rem;
-  color: antiquewhite;
-  border-color: antiquewhite;
-  margin-left: 20%;
-  margin-right: 20%;
-  margin-bottom: 2rem;
-  background-color: transparent;
-  border-radius: 3%; }
-
-/* CLIENTES */
-.subtitulo {
-  text-align: center;
-  padding-top: 5rem;
-  padding-bottom: 2rem;
-  padding-left: 3rem;
-  padding-right: 3rem; }
-
-.clientes-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  padding-bottom: 4rem;
-  padding: 1rem;
-  vertical-align: center;
-  margin-bottom: 4rem; }
-
-.clientes-grid img {
-  width: 15vw;
-  margin-bottom: 0.5rem;
-  align-content: center;
-  margin-left: 25%;
-  margin-right: 25%; }
-
-@media (min-width: 768px) {
-  .texo-descripcion h2 {
-    font-size: xx-large; }
-  .subtitulo-color h2 {
-    font-size: xx-large; }
-  h2 {
-    font-size: xx-large; }
-  .texo-descripcion {
-    padding-top: 8rem;
-    padding-bottom: 6rem;
-    padding: 6rem; }
-  .texo-descripcion p {
-    margin-top: 1rem;
-    padding-left: 15vh;
-    padding-right: 15vh;
-    font-size: large; }
-  .servicio {
-    width: 20vw; }
-  .servicio img {
-    width: 15vw;
-    margin-bottom: 2rem; }
-  .servicio p {
-    font-size: large;
-    margin-bottom: 1rem; }
-  .servicios-grid {
-    grid-template-columns: repeat(4, 1fr);
-    padding-bottom: 2rem;
-    padding-left: 15vh;
-    padding-right: 15vh; }
-  .button-text {
-    margin-left: 40%;
-    margin-right: 40%; }
-  .subtitulo {
-    padding-top: 8rem;
-    padding-bottom: 3rem; }
-  .subtitulo-color {
-    padding-top: 6rem;
-    padding-left: 6rem;
-    padding-right: 6rem; }
-  .subtitulo-color p {
-    font-size: large;
-    padding-left: 6rem;
-    padding-right: 6rem; }
-  .clientes-grid {
-    padding-left: 15vh;
-    padding-right: 15vh;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr); }
-  .clientes-grid img {
-    width: 8vw;
-    margin-bottom: 1.5rem; } }
-
 /* CONTACTO */
 .contacto-flex {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  padding-left: 3vh;
-  padding-right: 3vh;
-  margin-top: 2rem;
-  margin-bottom: 2rem; }
+  margin-top: 3rem; }
 
 .contacto {
   list-style: none;
   text-decoration: none;
   font-weight: normal;
-  font-size: medium; }
+  font-size: large; }
 
-/* MAPA */
+.contacto h3 {
+  font-family: 'Shippori Mincho B1', serif; }
+
+.contacto h2 {
+  font-family: 'Shippori Mincho B1', serif;
+  font-size: xx-large;
+  font-weight: 300;
+  text-align: center;
+  margin: 4rem; }
+
 .contacto-mapa {
-  width: 98%;
-  align-items: center; }
+  width: 98%; }
 
-/* FORMULARIO */
-.formulario {
-  padding-left: 5vh;
-  padding-right: 5vh;
-  vertical-align: center;
-  padding-bottom: 3rem;
-  padding-top: 3rem;
-  background-color: #3d3f40;
-  color: antiquewhite;
-  text-decoration: none; }
-
-.formulario input {
-  font-size: medium;
-  width: 80%;
-  padding: 3px 10px;
-  border: 1px solid #f6f6f6;
-  border-radius: 3px;
-  background-color: #f6f6f6;
-  margin: 5px 0;
-  display: inline-block; }
-
-#botonform {
-  width: 30%; }
-
-.formulario h2 {
-  text-align: left; }
-
-.legal {
-  font-size: 12px; }
+.contacto-foto {
+  width: 90%; }
 
 @media (min-width: 768px) {
   .contacto-flex {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding-left: 20vh;
-    padding-right: 20vh;
-    margin-bottom: 4rem; }
-  .formulario {
-    padding-left: 40vh;
-    padding-right: 20vh;
-    vertical-align: center;
-    padding-bottom: 4rem;
-    padding-top: 4rem; }
+    padding-left: 30vh;
+    padding-right: 30vh;
+    margin-top: 5rem; }
   .contacto-mapa {
-    width: 130%; }
-  .formulario input {
-    font-size: medium;
-    width: 50%;
-    padding: 3px 10px;
-    border: 1px solid #f6f6f6;
-    border-radius: 3px;
-    background-color: #f6f6f6;
-    margin: 8px 0;
-    display: inline-block; } }
+    width: 150%; }
+  .contacto h2 {
+    font-size: 240%;
+    margin: 5rem;
+    padding-left: 15%;
+    padding-right: 15%; } }
 
 /* EQUIPO */
 .equipo-flex {
   display: flex;
   flex-direction: row;
   margin: 0.5rem; }
-
-.equipo img {
-  width: 200px;
-  margin: 0.5rem;
-  margin-top: 1.5rem; }
 
 .equipo-flex ul {
   display: flex;
@@ -378,9 +391,6 @@
 .equipo-flex li {
   margin: 0.5rem; }
 
-.img-logo-linkedin {
-  width: 50px; }
-
 /* GRILLA DE EQUIPO */
 .equipo-grid {
   display: grid;
@@ -388,19 +398,39 @@
   padding-bottom: 1rem;
   vertical-align: center; }
 
-@media (max-width: 850px) {
-  .equipo-flex {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding-left: 3vh;
-    padding-right: 3vh; } }
+.equipo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  color: #023047; }
 
-@media (min-width: 851px) {
+.equipo-grid h3 {
+  font-size: large;
+  font-family: 'Shippori Mincho B1', serif;
+  color: #023047; }
+
+.equipo img {
+  width: 200px;
+  margin: 0.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 5%;
+  border-color: #023047; }
+
+#linkedin {
+  width: 60px; }
+
+#linkedin:hover {
+  transform: scale(1.3, 1.3); }
+
+@media (min-width: 768px) {
   .equipo-flex {
     padding-left: 20vh;
-    padding-right: 20vh; } }
+    padding-right: 20vh; }
+  .equipo-grid {
+    grid-template-columns: repeat(3, 1fr);
+    padding-bottom: 0rem;
+    padding-left: 15vh;
+    padding-right: 15vh; } }
 
 .noticia-flex {
   display: flex;

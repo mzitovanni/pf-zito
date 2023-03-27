@@ -1,5 +1,14 @@
 /* BANNER INICIAL*/
 
+.banner-hero-extend {
+    text-align: center;
+    color: antiquewhite;
+    padding: 3rem;
+    padding-left: 10%;
+    padding-right: 10%;
+    position: relative;
+}
+
 .banner-hero {
     background-image: url('../recursos/img-banners/ZMB_banner-home.png');
     height: 40vh;
@@ -8,13 +17,14 @@
     @extend .banner-hero-extend
 }
 
-.banner-hero-extend {
-    text-align: left;
-    color: antiquewhite;
-    padding: 2rem;
-    padding-right: 15vw;
-    position: relative;
-    top: 50%;
+.banner-hero h1{
+   
+    font-family: 'Shippori Mincho B1', serif;
+    color: #fff; 
+    font-size: xx-large;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: -2px;
 }
 
 .banner-hero-servicios {
@@ -25,12 +35,14 @@
     @extend .banner-hero-extend
 }
 
-.banner-hero-quienesomos {
-    background-image: url('../recursos/img-banners/ZMB_banner-quienes-somos.png');
-    height: 40vh;
-    background-size: cover;
-    box-shadow: 0px 4px 20px gray;
-    @extend .banner-hero-extend
+.banner-hero-servicios h1{
+   
+    font-family: 'Shippori Mincho B1', serif;
+    color: #fff; 
+    font-size: xx-large;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: -2px;
 }
 
 .banner-hero-contacto {
@@ -41,24 +53,30 @@
     @extend .banner-hero-extend
 }
 
-.banner-hero-noticia {
-    background-image: url('../recursos/img-banners/ZMB_banner-noticias.png');
-    height: 40vh;
-    background-size: cover;
-    box-shadow: 0px 4px 20px gray;
-    @extend .banner-hero-extend
+.banner-hero-contacto h1{
+   
+    font-family: 'Shippori Mincho B1', serif;
+    color: #fff; 
+    font-size: xx-large;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: -2px;
 }
 
-
+.banner-hero-contacto h3{
+    text-align: center;
+    font-size: large;
+    padding: 1rem;
+}
 
 
 @media (min-width: 768px) {
 
-
     .banner-hero-768px {
-        height: 70vh;
-        padding: 20vh;
-        padding-right: 30%;
+        height: 80vh;
+        padding: 15vh;
+        padding-right: 15%;
+        padding-left: 15%;
         font-size:180%;
     }
 
@@ -70,16 +88,36 @@
         @extend .banner-hero-768px
     }
 
-    .banner-hero-quienesomos {
-        @extend .banner-hero-768px
-    }
-
     .banner-hero-contacto {
-        @extend .banner-hero-768px
-    } 
-    
-    .banner-hero-noticia {
-        @extend .banner-hero-768px
+        height: 50vh;
+        padding: 10vh;
+        padding-right: 15%;
+        padding-left: 15%;
+        font-size:180%;
     }
 
+
+    .banner-hero h1{
+        font-size: 75px;
+        line-height: 80px;
+        font-weight: 300;
+    }
+    
+    .banner-hero-servicios h1{
+        font-size: 70px;
+        line-height: 80px;
+        font-weight: 300;
+    }
+
+    .banner-hero-contacto h1{
+        font-size: 70px;
+        line-height: 80px;
+        font-weight: 300;
+    }
+
+    .banner-hero-contacto h3{
+        text-align: center;
+        font-size: xx-large;
+        padding: 3rem;
+    }
 }

@@ -1,98 +1,63 @@
 $azuloscuro: #023047; $grisoscuro: #3d3f40;
 
         /* CONTACTO */
+
         .contacto-flex {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
-        padding-left: 3vh;
-        padding-right: 3vh;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
+
+        margin-top: 3rem;
     }
 
     .contacto {
         list-style: none;
         text-decoration: none;
         font-weight: normal;
-        font-size: medium;
+        font-size: large;
+    }
+
+    .contacto h3{
+        font-family: 'Shippori Mincho B1', serif
+    }
+
+    .contacto h2 {
+        font-family: 'Shippori Mincho B1', serif;
+        font-size: xx-large;
+        font-weight: 300;
+        text-align: center;
+        margin: 4rem;
 
     }
 
-        /* MAPA */
     .contacto-mapa {
         width: 98%;  
-        align-items: center;
-
     }
 
-
-    /* FORMULARIO */
-    .formulario {
-
-        padding-left: 5vh;
-        padding-right: 5vh;
-        vertical-align: center;
-        padding-bottom: 3rem;
-        padding-top: 3rem;
-        background-color: $grisoscuro;
-        color: antiquewhite;
-        text-decoration: none;
-
+    .contacto-foto {
+        width: 90%; 
     }
 
-    .formulario input {
-        font-size: medium;
-        width: 80%;
-        padding: 3px 10px;
-        border: 1px solid #f6f6f6;
-        border-radius: 3px;
-        background-color: #f6f6f6;
-        margin: 5px 0;
-        display: inline-block;
-    }
-
-    #botonform {
-        width: 30%;
-    }
-
-    .formulario h2 {
-        text-align: left;
-    }
-
-    .legal {
-        font-size: 12px;
-    }
 
     @media (min-width: 768px) {
         .contacto-flex {
             display: flex;
             flex-direction: row;
             justify-content:space-around;
-            padding-left: 20vh;
-            padding-right: 20vh;
-            margin-bottom: 4rem;
+            padding-left: 30vh;
+            padding-right: 30vh;
+            margin-top: 5rem;
         }
         
-        .formulario {
-            padding-left: 40vh;
-            padding-right: 20vh;
-            vertical-align: center;
-            padding-bottom: 4rem;
-            padding-top: 4rem;
-        }
 
         .contacto-mapa {
-            width: 130%;      
+            width: 150%; 
         }
-        .formulario input {
-            font-size: medium;
-            width: 50%;
-            padding: 3px 10px;
-            border: 1px solid #f6f6f6;
-            border-radius: 3px;
-            background-color: #f6f6f6;
-            margin: 8px 0;
-            display: inline-block;
-        }
+
+        .contacto h2 {
+            font-size: 240%;
+            margin: 5rem;
+            padding-left: 15%;
+            padding-right: 15%;}
+
+
     }

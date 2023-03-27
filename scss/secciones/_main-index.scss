@@ -1,5 +1,5 @@
 $azul-oscuro: #023047;
-$gris-oscuro: #3d3f40;
+$gris-oscuro: #f1efe1;
 
 
 /* DESCRIPCIÓN */
@@ -8,15 +8,23 @@ $gris-oscuro: #3d3f40;
     padding: 2rem;
     padding-top: 3rem;
     padding-bottom: 2rem;
+    color: #023047;
 }
 
+
 .texo-descripcion h2{
-    font-size: 22px;
+    font-size: xx-large;
+    font-family: 'Shippori Mincho B1', serif;
+    color: #023047;
+
 }
 
 .texo-descripcion p {
-    margin-top: 0.5rem;
     font-size: 13px;
+    margin-bottom: 2rem;
+    margin: 0.5rem;
+    color: #023047;
+    font-family: Generalsans, sans-serif;
 }
 
 /* SERVICIOS */
@@ -36,8 +44,8 @@ $gris-oscuro: #3d3f40;
 }
 
 .servicio h2{
-    font-size: 22px;
-
+    font-size: xx-large;
+    font-family: 'Shippori Mincho B1', serif;
 }
 
 .servicio p {
@@ -48,17 +56,20 @@ $gris-oscuro: #3d3f40;
 
 .subtitulo-color {
     background-color: $gris-oscuro;
-    color: antiquewhite;
+    color: #023047;
     text-align: center;
     padding: 3rem;
 }
 
 .subtitulo-color h2{
-    font-size: 22px;
+    font-size: xx-large;
+    font-family: 'Shippori Mincho B1', serif;
+    color: #023047;
 }
 
 .subtitulo-color p {
     font-size: 13px;
+    color: #023047;
 }
 
 /* GRILLA DE SERVICIOS - HOME */
@@ -66,10 +77,8 @@ $gris-oscuro: #3d3f40;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     background-color: $gris-oscuro;
-    color: antiquewhite;
-    padding-bottom: 1rem;
-    vertical-align: center;
     border-color: $gris-oscuro;
+    color: #023047;
 }
 
 .button {
@@ -77,6 +86,7 @@ $gris-oscuro: #3d3f40;
     padding-bottom: 6rem;
     padding-top: 2rem;
 }
+
 
 .button-text {
     font-size: 1rem;
@@ -134,6 +144,7 @@ $gris-oscuro: #3d3f40;
 @media (min-width: 768px) {
     .texo-descripcion h2{
         font-size: xx-large;
+      
     }
     .subtitulo-color h2{
         font-size: xx-large;
@@ -146,7 +157,8 @@ $gris-oscuro: #3d3f40;
     .texo-descripcion {
         padding-top: 8rem;
         padding-bottom: 6rem;
-        padding: 6rem;
+        padding-left: 20vh;
+        padding-right: 20vh;
     }
 
     .texo-descripcion p {
@@ -167,12 +179,12 @@ $gris-oscuro: #3d3f40;
 
     .servicio p {
         font-size: large;
-        margin-bottom: 1rem;
+        margin-bottom: 0rem;
     }
 
     .servicios-grid {
         grid-template-columns: repeat(4, 1fr);
-        padding-bottom: 2rem;
+        padding-bottom: 0rem;
         padding-left: 15vh;
         padding-right: 15vh;
     }
@@ -184,13 +196,13 @@ $gris-oscuro: #3d3f40;
 
     .subtitulo {
         padding-top: 8rem;
-        padding-bottom: 3rem;
+        padding-bottom: 2rem;
     }
 
     .subtitulo-color {
-        padding-top: 6rem;
-        padding-left: 6rem;
-        padding-right: 6rem;
+        padding-top: 4rem;
+        padding-left: 20vh;
+        padding-right: 20vh;
     }
 
     .subtitulo-color p {
