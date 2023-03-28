@@ -149,8 +149,11 @@ $gris-oscuro: #f1efe1;
     width: 15vw;
     margin-bottom: 0.5rem;
     align-content: center;
-    margin-left: 25%;
-    margin-right: 25%;
+    border-radius: 3%;
+}
+
+.clientes-grid p{
+    text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -238,7 +241,7 @@ $gris-oscuro: #f1efe1;
     }    
 
     .clientes-grid img {
-        width: 8vw;
+        width: 12vw;
         margin-bottom: 1.5rem;
     }
     .card{

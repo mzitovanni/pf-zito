@@ -125,8 +125,10 @@
   width: 15vw;
   margin-bottom: 0.5rem;
   align-content: center;
-  margin-left: 25%;
-  margin-right: 25%; }
+  border-radius: 3%; }
+
+.clientes-grid p {
+  text-align: center; }
 
 @media (min-width: 768px) {
   .texo-descripcion h2 {
@@ -183,7 +185,7 @@
     display: grid;
     grid-template-columns: repeat(6, 1fr); }
   .clientes-grid img {
-    width: 8vw;
+    width: 12vw;
     margin-bottom: 1.5rem; }
   .card {
     margin: 1.5rem; } }
