@@ -67,6 +67,16 @@
   border-color: #f1efe1;
   color: #023047; }
 
+.servicios-grid2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #f1efe1;
+  border-color: #f1efe1;
+  color: #023047; }
+
+.card {
+  margin: 2rem; }
+
 .button {
   background-color: #f1efe1;
   padding-bottom: 6rem;
@@ -126,7 +136,7 @@
   h2 {
     font-size: xx-large; }
   .texo-descripcion {
-    padding-top: 8rem;
+    padding-top: 6rem;
     padding-bottom: 6rem;
     padding-left: 20vh;
     padding-right: 20vh; }
@@ -145,6 +155,11 @@
     margin-bottom: 0rem; }
   .servicios-grid {
     grid-template-columns: repeat(4, 1fr);
+    padding-bottom: 0rem;
+    padding-left: 15vh;
+    padding-right: 15vh; }
+  .servicios-grid2 {
+    grid-template-columns: repeat(3, 1fr);
     padding-bottom: 0rem;
     padding-left: 15vh;
     padding-right: 15vh; }
@@ -169,7 +184,9 @@
     grid-template-columns: repeat(6, 1fr); }
   .clientes-grid img {
     width: 8vw;
-    margin-bottom: 1.5rem; } }
+    margin-bottom: 1.5rem; }
+  .card {
+    margin: 1.5rem; } }
 
 /*font-family: 'Montserrat', sans-serif;*/
 /*font-family: 'Shippori Mincho B1', serif;*/
@@ -336,7 +353,7 @@
 .contacto-flex {
   display: flex;
   flex-direction: column;
-  margin-top: 3rem; }
+  margin-top: 1rem; }
 
 .contacto {
   list-style: none;
@@ -354,6 +371,10 @@
   text-align: center;
   margin: 4rem; }
 
+.contacto li {
+  font-size: 13px;
+  color: #023047; }
+
 .contacto-mapa {
   width: 98%; }
 
@@ -367,14 +388,18 @@
     justify-content: space-around;
     padding-left: 30vh;
     padding-right: 30vh;
-    margin-top: 5rem; }
+    margin-top: 0rem; }
   .contacto-mapa {
     width: 150%; }
   .contacto h2 {
     font-size: 240%;
     margin: 5rem;
     padding-left: 15%;
-    padding-right: 15%; } }
+    padding-right: 15%; }
+  .contacto li {
+    margin-top: 0.5rem;
+    padding-right: 15vh;
+    font-size: large; } }
 
 /* EQUIPO */
 .equipo-flex {

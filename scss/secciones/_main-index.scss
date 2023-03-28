@@ -81,6 +81,18 @@ $gris-oscuro: #f1efe1;
     color: #023047;
 }
 
+.servicios-grid2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: $gris-oscuro;
+    border-color: $gris-oscuro;
+    color: #023047;
+}
+
+.card{
+    margin: 2rem;
+}
+
 .button {
     background-color: $gris-oscuro;
     padding-bottom: 6rem;
@@ -155,7 +167,7 @@ $gris-oscuro: #f1efe1;
     }
 
     .texo-descripcion {
-        padding-top: 8rem;
+        padding-top: 6rem;
         padding-bottom: 6rem;
         padding-left: 20vh;
         padding-right: 20vh;
@@ -184,6 +196,13 @@ $gris-oscuro: #f1efe1;
 
     .servicios-grid {
         grid-template-columns: repeat(4, 1fr);
+        padding-bottom: 0rem;
+        padding-left: 15vh;
+        padding-right: 15vh;
+    }
+
+    .servicios-grid2 {
+        grid-template-columns: repeat(3, 1fr);
         padding-bottom: 0rem;
         padding-left: 15vh;
         padding-right: 15vh;
@@ -221,5 +240,8 @@ $gris-oscuro: #f1efe1;
     .clientes-grid img {
         width: 8vw;
         margin-bottom: 1.5rem;
+    }
+    .card{
+        margin: 1.5rem;
     }
 }
